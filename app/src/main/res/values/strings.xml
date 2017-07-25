@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyNewApp</string>
+    <string name="calculateur_imc">Calculateur IMC</string>
+    <string name="saisir_votre_taille">Saisir votre taille</string>
+    <string name="saisir_votre_poids">Saisir votre poids</string>
+    <string name="calculer_mon_imc">Calculer mon IMC</string>
 </resources>

@@ -7,32 +7,54 @@
     tools:context="fr.btssio.mynewapp.MainActivity">
 
     <TextView
-        android:id="@+id/message"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="BTS SIO SLAM"
-        android:layout_below="@+id/messageUtilisateur"
-        android:layout_alignRight="@+id/cliqueBouton"
-        android:layout_alignEnd="@+id/cliqueBouton" />
-
-    <Button
-        android:id="@+id/cliqueBouton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="actionBouton"
-        android:text="Clique ici" />
-
-    <EditText
-        android:id="@+id/messageUtilisateur"
+        android:id="@+id/titre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="65dp"
+        android:text="@string/calculateur_imc"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/taille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Veuillez saisir votre texte" />
+        android:inputType="number"
+        android:hint="@string/saisir_votre_taille"/>
+
+    <EditText
+        android:id="@+id/poids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/taille"
+        android:layout_alignStart="@+id/taille"
+        android:layout_below="@+id/taille"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/saisir_votre_poids"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poids"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="@string/calculer_mon_imc"
+        android:onClick="calculIMC"/>
+
+    <TextView
+        android:id="@+id/IMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:textSize="20sp"/>
 </RelativeLayout>

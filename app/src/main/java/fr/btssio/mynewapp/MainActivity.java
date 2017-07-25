@@ -16,19 +16,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //Appel de notre méthode "onClick" du bouton provenant de notre Layout
-    public void actionBouton (View v) {
+    //Méthode appelée par le clique du bouton
+    public void calculIMC(View v) {
 
-        //Récupération de notre élément TextView depuis notre Layout
-        TextView tv = (TextView) findViewById(R.id.message);
+        //Récupération de nos différents éléments depuis notre Layout
+        EditText etTaille = (EditText) findViewById(R.id.taille);
+        EditText etPoids = (EditText) findViewById(R.id.poids);
+        TextView tvImc = (TextView) findViewById(R.id.IMC);
 
-        //Récupération de notre élément EditText depuis notre Layout
-        EditText et = (EditText) findViewById(R.id.messageUtilisateur);
+        //Mémorisation des valeurs et conversion en format double
+        double taille = Double.parseDouble(etTaille.getText().toString().trim()) / 100;
+        double poids = Double.parseDouble(etPoids.getText().toString().trim());
 
-        //Texte saisi dans l'élément EditText
-        String message = et.getText().toString().trim();
+        //Calcul du résultat final
+        double IMC = poids / (taille * taille);
 
-        //Changement de la valeur de l'élément TextView par notre message
-        tv.setText(message);
+        //Affichage du résultat
+        tvImc.setText(String.format("%f", IMC));
     }
 }
