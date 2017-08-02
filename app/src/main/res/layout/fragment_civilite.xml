@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CiviliteFragment">
+
+    <!-- Image du profil -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profil"
+        app:border_color="@android:color/white"
+        app:border_width="1dp" />
+
+    <!-- Nom du menu -->
+    <TextView
+        android:id="@+id/civilite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/civilite_item"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- Nom de l'utilisateur -->
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/civilite"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/civilite"
+        android:layout_toStartOf="@+id/civilite"
+        android:text="@string/username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- Adresse de l'utilisateur -->
+    <TextView
+        android:id="@+id/adresse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_alignStart="@+id/nom"
+        android:layout_below="@+id/nom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/adresse"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- Téléphone de l'utilisateur -->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_alignStart="@+id/nom"
+        android:layout_below="@+id/adresse"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/phone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <!-- Email de l'utilisateur -->
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nom"
+        android:layout_alignStart="@+id/nom"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/mail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+</RelativeLayout>

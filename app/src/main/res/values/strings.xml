@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">MonCV</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="civilite_item">Civilité</string>
+    <string name="experience_item">Expériences</string>
+    <string name="formation_item">Formations</string>
+    <string name="competence_item">Compétences</string>
+    <string name="langue_item">Langues étrangères</string>
+    <string name="info_item">Infos</string>
+    <string name="about_item">A propos</string>
+
+    <string name="username">Florence Nunes</string>
+    <string name="mail">florence.nunes@greta-sud-aquitaine.fr</string>
+    <string name="adresse">Adresse: 7 rue des lilas, 33000 Bordeaux</string>
+    <string name="phone">Téléphone: 0612345678</string>
+    <string name="about_app">A propos de l\'Application</string>
+    <string name="about_intro">Cette application permet de présenter mon CV avec les différentes parties:</string>
+    <string name="about_details">• Civilité \n• Expériences \n• Formations \n• Compétences \n• Langues Étrangères</string>
 </resources>

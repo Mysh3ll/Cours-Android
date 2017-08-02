@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_civilite"
+            android:checked="true"
+            android:icon="@drawable/ic_civilite"
+            android:title="@string/civilite_item" />
+        <item
+            android:id="@+id/nav_experience"
+            android:icon="@drawable/ic_experience"
+            android:title="@string/experience_item" />
+        <item
+            android:id="@+id/nav_formation"
+            android:icon="@drawable/ic_formation"
+            android:title="@string/formation_item" />
+        <item
+            android:id="@+id/nav_competence"
+            android:icon="@drawable/ic_competence"
+            android:title="@string/competence_item" />
+        <item
+            android:id="@+id/nav_langue"
+            android:icon="@drawable/ic_langue"
+            android:title="@string/langue_item" />
+
+        <!-- Sous Menu -->
+        <item
+            android:id="@+id/info_section"
+            android:title="@string/info_item">
+            <menu>
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@drawable/ic_about"
+                    android:title="@string/about_item" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
